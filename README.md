@@ -21,11 +21,15 @@ A Python application that scrapes movie screenings from Boston-area independent 
 ### Requirements
 
 - Python 3.9+
-- Flask (installed automatically via requirements.txt)
+- Dependencies in `requirements.txt` (install with `pip install -r requirements.txt`)
 
 ### Setup
 
-1. Clone or download this repository.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/nhanna95/CinemaCal.git
+   cd CinemaCal
+   ```
 
 2. Create and use the virtual environment:
    ```bash
@@ -141,15 +145,20 @@ For direct Google Calendar integration:
 
 On first use, you'll be prompted to authorize access in your browser.
 
+For optional settings (e.g. custom calendar ID or token path), copy `.env.example` to `.env` and edit as needed.
+
 The Calendar view can show events from multiple calendars (e.g. meetings, classes, movie screenings). Use the "Calendars to show" checkboxes in Calendar view to choose which calendars to display. New screenings are always added to your **Movie Screenings** calendar (or the calendar set in `GOOGLE_CALENDAR_ID` in `.env` if you use a different name).
 
 ## Project Structure
 
 ```
-cinemacal/
+CinemaCal/
 ├── main.py                 # Application entry point
 ├── requirements.txt        # Python dependencies
 ├── README.md
+├── LICENSE                 # MIT License
+├── .env.example            # Optional env vars (copy to .env)
+├── config/                 # Create this for Google Calendar (credentials.json, token.json)
 └── src/
     ├── models.py           # Data models (Screening, ScraperConfig)
     ├── scrapers/           # Theater website scrapers
@@ -199,4 +208,4 @@ cinemacal/
 
 ## License
 
-MIT License - feel free to modify and distribute.
+[MIT License](LICENSE) — feel free to modify and distribute.

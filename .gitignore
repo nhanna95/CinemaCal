@@ -1,12 +1,68 @@
+# Virtual environments
 venv/
 .venv/
+env/
+.env/
+
+# Python
 __pycache__/
 *.py[cod]
+*$py.class
 *.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Environment and secrets
 .env
-.cache/
-*.ics
+.env.local
+.env.*.local
 
 # Google Calendar API credentials (place credentials.json here)
 config/credentials.json
 config/token.json
+
+# Generated / local data
+.cache/
+*.ics
+
+# IDE / editor (keep .vscode/tasks.json etc. if you want to share them)
+.idea/
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+
+# Logs and temp
+*.log
+*.tmp
+*.temp
+.cache
