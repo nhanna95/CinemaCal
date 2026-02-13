@@ -1,0 +1,12 @@
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.cache/
+*.ics
+
+# Google Calendar API credentials (place credentials.json here)
+config/credentials.json
+config/token.json

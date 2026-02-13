@@ -1,0 +1,18 @@
+# Scraping
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+lxml>=5.0.0
+
+# Calendar
+icalendar>=5.0.0
+
+# Google Calendar API (optional)
+google-api-python-client>=2.100.0
+google-auth-oauthlib>=1.1.0
+
+# Timezone support
+pytz>=2024.1
+
+# Web framework
+flask>=3.0.0
+flask-cors>=4.0.0
